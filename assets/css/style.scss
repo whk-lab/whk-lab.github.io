@@ -1,0 +1,13 @@
+---
+---
+@import "main";
+
+/* Hide the circular avatar in the sidebar until a logo is ready */
+#avatar {
+  display: none !important;
+}
+
+/* Adjust the margin of the site title to look better without the avatar */
+.sidebar-top {
+  padding-top: 3rem !important;
+}

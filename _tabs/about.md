@@ -11,8 +11,9 @@ I am a Software Engineer deeply passionate about the intersection of **High-Perf
 
 ## 🚀 What I Do
 In this lab, I document my journey and technical deep dives into:
+- **Hardware-Aware Optimization**: Expertise in bridging the gap between cutting-edge models and diverse hardware backends, including **NPU and GPU**.
 - **LLM Inference Engines**: Deep exploration of frameworks like `vLLM`, `sglang`, and `TensorRT-LLM`.
-- **System Optimization**: Leveraging `torch.compile`, Triton kernels, and hardware-aware optimizations (NPU/GPU).
+- **System Optimization**: Leveraging `torch.compile`, Triton kernels, and piecewise compilation strategies.
 - **Performance Engineering**: Solving the "Memory Wall" and "Throughput Wall" in large-scale model serving.
 
 ## 💡 Why WHK-Lab?

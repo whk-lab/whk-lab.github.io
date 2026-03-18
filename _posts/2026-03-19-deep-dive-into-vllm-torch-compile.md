@@ -231,4 +231,4 @@ As a frontline developer integrating bottom-layer hardware with vLLM, I believe 
 vLLM's integration of `torch.compile` has not yet reached its final destination. With the introduction of more complex technologies like **Speculative Decoding**, we will face more dynamic boundary challenges. However, this combination of "Piecewise Compilation" and "Shape Bucketing" has already set a new technical benchmark for high-performance inference engines.
 
 ---
-**About the Author**: Currently focused on NPU support and low-level optimization for inference frameworks like vLLM/sglang. Feel free to connect with me on GitHub or [LinkedIn](https://www.linkedin.com/in/kevin-kuo-745155179/)!
+**About the Author**: Focused on **hardware-aware optimization** and low-level systems for LLM inference frameworks (vLLM/sglang). Expertise in bridging the gap between cutting-edge models and diverse hardware backends, including **NPU and GPU**. Feel free to connect with me on GitHub or [LinkedIn](https://www.linkedin.com/in/kevin-kuo-745155179/)!
