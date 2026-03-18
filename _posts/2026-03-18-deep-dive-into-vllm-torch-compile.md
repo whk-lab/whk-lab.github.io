@@ -79,11 +79,11 @@ out = compiled_model(x)
 graph TD
     A[Original Python Code / User Code] --> B
     B[1. TorchDynamo <br/> Graph Capture Layer]
-    B -->|Intercepts bytecode & builds FX Graph| C
+    B -->|" &nbsp; Intercepts bytecode & builds FX Graph"| C
     C[2. AOTAutograd <br/> Trace Forward/Backward]
-    C -->|Lowers to core ATen ops| D
+    C -->|" &nbsp; Lowers to core ATen ops"| D
     D[3. TorchInductor <br/> Backend Compiler]
-    D -->|Op fusion & code generation| E[Optimized Triton/C++ Executable]
+    D -->|" &nbsp; Op fusion & code generation"| E[Optimized Triton/C++ Executable]
     
     style A fill:#f9f9f9,stroke:#333
     style B fill:#ffe6cc,stroke:#d79b00
@@ -99,19 +99,19 @@ graph TD
     A[1. User Code <br> model.forward] --> B
     
     B[2. TorchDynamo <br> Graph Capture Layer]
-    B -->|Intercepts bytecode, captures graph| C
+    B -->|" &nbsp; Intercepts bytecode, captures graph"| C
     
     subgraph "3. Backend (Code Generation Layer)"
         C{Backend Selection}
-        C -->|backend == 'inductor'| F
-        C -->|backend == 'vllm_backend'| D[VllmBackend Processing]
-        D -->|Apply custom fusions, config Inductor| E{Does graph need splitting?}
-        E -->|YES| G[PiecewiseBackend <br> Splits graph into segments]
-        E -->|NO| F
+        C -->|" &nbsp; backend == 'inductor'"| F
+        C -->|" &nbsp; backend == 'vllm_backend'"| D[VllmBackend Processing]
+        D -->|" &nbsp; Apply custom fusions, config Inductor"| E{Does graph need splitting?}
+        E -->|" &nbsp; YES"| G[PiecewiseBackend <br> Splits graph into segments]
+        E -->|" &nbsp; NO"| F
         G --> F[4. Inductor <br> Actual Code Generation]
     end
     
-    F -->|Generates Triton kernels, performs fusion| H[5. Compiled Code <br> Triton/CUDA kernels]
+    F -->|" &nbsp; Generates Triton kernels, performs fusion"| H[5. Compiled Code <br> Triton/CUDA kernels]
     
     style B fill:#ffe6cc,stroke:#d79b00
     style D fill:#dae8fc,stroke:#6c8ebf
