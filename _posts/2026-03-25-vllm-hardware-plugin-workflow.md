@@ -592,10 +592,10 @@ The payoff is significant: once those boundaries are respected, accelerator team
 
 ## 16. References
 
-- https://github.com/vllm-project/vllm
-- https://docs.vllm.ai/en/latest/design/plugin_system/
-- https://github.com/vllm-project/vllm-ascend
-- https://github.com/vllm-project/vllm/issues/11162
+- [https://github.com/vllm-project/vllm](https://github.com/vllm-project/vllm)
+- [https://docs.vllm.ai/en/latest/design/plugin_system/](https://docs.vllm.ai/en/latest/design/plugin_system/)
+- [https://github.com/vllm-project/vllm-ascend](https://github.com/vllm-project/vllm-ascend)
+- [https://github.com/vllm-project/vllm/issues/11162](https://github.com/vllm-project/vllm/issues/11162)
 
 ---
 **About the Author**: Focused on **hardware-aware optimization** and low-level systems for LLM inference frameworks (vLLM/sglang). Expertise in bridging the gap between cutting-edge models and diverse hardware backends, including **NPU and GPU**. Feel free to connect with me on GitHub or [LinkedIn](https://www.linkedin.com/in/kevin-kuo-745155179/)!
